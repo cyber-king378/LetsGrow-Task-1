@@ -1,0 +1,438 @@
+/* Importing google font */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    font-family: "Poppins";
+}
+
+
+/* Header section */
+.header {
+    
+    height: 69vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+
+}
+
+#navBar {
+    height: auto;
+    z-index: 999;
+    transition: all 0.3s;
+     
+}
+
+#home,
+#projects,
+#team,
+#pricing,
+#blog,
+#contact {
+    color: white;
+}
+
+#home:hover,
+#projects:hover,
+#team:hover,
+#pricing:hover,
+#blog:hover,
+#contact:hover {
+    color: rgb(77, 245, 11);
+}
+
+.navInfo {
+    height: 100%;
+    position: relative;
+}
+
+.headerButton {
+    background-color: rgba(99, 88, 194, 0.904);
+    color: white;
+    border: solid 1px rgb(68, 107, 238); 
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.headerButton:hover {
+    background-color: rgb(236, 226, 226);
+    border: solid 1px;
+    color: black;
+}
+
+/*Welcome section */
+.welcomeServices {
+    background-color: rgb(70, 132, 190);
+    border: 0px solid rgb(67, 118, 230);
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    text-align: center !important;
+}
+
+.welcomeServices>i {
+    font-size: 35px;
+    color: white;
+}
+
+.welcomeButton {
+    background-color: rgb(58, 14, 218);
+    color: white;
+    border: solid 1px rgb(39, 18, 230);
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.welcomeButton:hover {
+    background-color: rgb(24, 23, 23);
+    border: solid 1px rgb(17, 17, 17);
+    color: whitesmoke;
+}
+
+
+.slider{
+    position: relative;
+    background: #000116;
+    width: auto;
+    min-height: 500px;
+    overflow: hidden;
+  }
+  
+  .slider .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+  }
+  
+  .slider .slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 0.5s;
+  }
+  
+  .slider .slide img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider .slide .info{
+    position: absolute;
+    color: white;
+    background: rgba(255, 255, 255, 0);
+    width: 75%;
+    margin-top: 10%;
+    margin-left: 20%;
+    padding: 20px;
+    
+  }
+
+  .slider .slide .info h2{
+    font-size: 2em;
+    font-weight: 800;
+  }
+  
+  
+  .navigation{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slider:hover .navigation{
+    opacity: 1;
+  }
+  
+  .prev-btn, .next-btn{
+    z-index: 999;
+    font-size: 2em;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .prev-btn{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  
+  .next-btn{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  
+  .navigation-visibility{
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation-visibility .slide-icon{
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.5);
+    width: 7px;
+    height: 7px;
+    border-radius: 100px;
+    transform: translateY(-50px);
+    margin: 0 6px;
+    border-radius: 2px;
+  }
+  
+  .navigation-visibility .slide-icon.active{
+    background: white;
+  }
+  
+  @media (max-width: 900px){
+    .slider{
+      width: 100%;
+    }
+  
+    .slider .slide .info{
+      position: relative;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (max-width: 500px){
+    .slider .slide .info h2{
+      font-size: 1.8em;
+      line-height: 40px;
+    }
+  }
+
+/*Projects section */
+
+.projectsData {
+    background-color: whitesmoke;
+}
+
+.projectsData:hover {
+    background-color: rgb(245, 188, 188);
+}
+
+.projectButton {
+    background-color: white;
+    color: rgb(112, 3, 112);
+    border: solid 1px white;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 5px 30px rgb(220, 220, 220);
+}
+
+.projectButton:hover {
+    background-color: rgb(26, 24, 24);
+    border: solid 1px rgb(17, 17, 17);
+    color: whitesmoke;
+}
+
+/*Pricing section */
+
+.pricingData {
+    height: auto;
+    border-right: 2px rgba(27, 226, 77, 0.349) solid;
+    border-radius: 3px;
+}
+
+.pricingButton {
+    background-color: rgb(93, 219, 43);
+    color: white;
+    border: solid 1px rgb(24, 219, 112);
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pricingButton:hover {
+    background-color: rgb(15, 156, 238);
+    border: solid 1px rgb(248, 248, 129);
+    color: black;
+}
+
+/* Video-projects */
+.videoProjects {
+    background-color: rgb(105, 103, 103);
+}
+
+.leftVideoSlide,
+.rightVideoSlide,
+.activeVideo {
+    height: 320px;
+    width: 33vw;
+}
+
+.leftVideoSlide:hover,
+.activeVideo:hover,
+.rightVideoSlide:hover {
+    filter: brightness(70%);
+}
+.x01{
+    max-height: 600px;
+    display: flex;
+    overflow: auto;
+  }
+  .x01::-webkit-scrollbar{
+    width: 0;
+  }
+  .x1{
+    margin-left: 70px;
+  }
+  .vid{
+    height: 480px;
+  }
+  #video{
+    padding-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(78, 49, 104);
+    color: white;
+  }
+  .h2{
+      text-align: center;
+  }
+#prev,
+#next {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+/* Team section */
+
+.teamImage {
+    border: 0px solid transparent;
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+/* Life at Zippy */
+
+.zippyLife {
+    background-color: whitesmoke;
+}
+
+/* Newsletter */
+
+.signUp {
+    background: linear-gradient(5deg, rgba(75, 74, 74, 0.603), rgba(77, 76, 77, 0.575)), url("");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.signUpButton {
+    background-color: rgb(112, 3, 112);
+    color: white;
+    border: solid 1px rgb(112, 3, 112);
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.signUpButton:hover {
+    background-color: rgb(245, 237, 237);
+    border: solid 1px rgb(7, 7, 7);
+    color: black;
+}
+
+/* Award blog section  */
+
+.blogImage {
+  display: flex;
+    margin-left: 35%;
+    align-items: center;
+    height:190px;
+    width: 120px;
+}
+
+.blogButton {
+    background-color: rgb(220, 220, 220);
+    color: black;
+    border: solid 1px rgb(220, 220, 220);
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.blogButton:hover {
+    background-color: rgb(248, 248, 129);
+    border: solid 1px rgb(248, 248, 129);
+    color: black;
+}
+
+.centerBlog {
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+/* Contact us */
+
+.contactForm,
+.contactForm>div {
+  align-items: center;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactForm>div>button {
+    background-color: rgb(112, 3, 112);
+    color: white;
+    border: solid 1px rgb(112, 3, 112);
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contactForm>div>button:hover {
+    background-color: whitesmoke;
+    border: solid 1px rgb(112, 3, 112);
+    color: rgb(112, 3, 112);
+}
+
+.contactData {
+    height: auto;
+    width: 100%;
+}
+iframe{
+  width: 95%;
+  height: 40rem;
+}
+
+/* END */
